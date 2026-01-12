@@ -3,7 +3,11 @@
 def multiplicacao(a, b):
     return a * b
 def divisao(a, b):
-    return a / b
+    if(b == 0):
+        print("Erro, divisão por zero!")
+        return None
+    else:
+        return a / b
 
 #Teste das funções
 if __name__ == "__main__":
